@@ -13,7 +13,7 @@ public class RombTest {
     }
     @Test
     public void testCalcArea() {
-        double actual = this.romb.calcArea(15.0,45.0,135.0);
+        double actual = this.romb.calcArea(15.0,45.0);
         double expected = 159.1;
         Assert.assertEquals(actual, expected, 0.1);
     }
@@ -25,7 +25,15 @@ public class RombTest {
     }
     @Test(expectedExceptions = InputMismatchException.class)
     public void testCaclAreaZeroSide() {
-        this.romb.calcArea(0, 45,135);
+        this.romb.calcArea(0, 45);
     }
-    
+    @Test(expectedExceptions = InputMismatchException.class)
+    public void testCaclAreaZeroA() {
+        this.romb.calcArea(15, 0);
+    }
+    @Test(expectedExceptions = InputMismatchException.class)
+    public void testCaclCircumferenceZeroSide() {
+        this.romb.calcCircumference(0);
+    }
+
 }

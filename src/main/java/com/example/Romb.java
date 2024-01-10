@@ -3,7 +3,7 @@ package com.example;
 import java.util.InputMismatchException;
 
 public class Romb {
-    public double calcArea(double side, double a, double b) {
+    public double calcArea(double side, double a) {
         if(side  <= 0 || a <= 0) {
             throw new InputMismatchException("Hiba!");
         }
