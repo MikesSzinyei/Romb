@@ -17,4 +17,5 @@ public class RombTest {
         Assert.assertEquals(actual, expected, 0.1, 
         "Hiba! Nem 159.1 lett a 15, 45 bemenete");
     }
+    
 }
