@@ -11,6 +11,6 @@ public class RombTest {
     }
     @Test
     public void testCalc() {
-
+        double actual = this.romb.calcArea();
     }
 }
