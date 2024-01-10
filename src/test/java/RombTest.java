@@ -27,11 +27,11 @@ public class RombTest {
     public void testCaclAreaZeroSide() {
         this.romb.calcArea(0, 45);
     }
-    @Test(expectedExceptions = InputMismatchException.class)
+    @Test(expectedExceptions = InputMismatchException.class, expectedExceptionsMessageRegExp = "Hiba!")
     public void testCaclAreaZeroA() {
         this.romb.calcArea(15, 0);
     }
-    @Test(expectedExceptions = InputMismatchException.class)
+    @Test(expectedExceptions = InputMismatchException.class, expectedExceptionsMessageRegExp = "Hiba!")
     public void testCaclCircumferenceZeroSide() {
         this.romb.calcCircumference(0);
     }
