@@ -20,5 +20,6 @@ public class RombTest {
     @Test
     public void testCalcCircumference() {
         double actual = this.romb.calcCircumference(15);
+        double expected = 60;
     }
 }

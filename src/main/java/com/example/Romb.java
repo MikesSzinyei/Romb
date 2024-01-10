@@ -5,5 +5,8 @@ public class Romb {
         return Math.pow(side, 2)*(Math.sin(a*(Math.PI/180)));
     }
 
+    public double calcCircumference(double side) {
+        return 0;
+    }
 
 }
