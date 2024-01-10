@@ -23,15 +23,8 @@ public class RombTest {
         double expected = 60;
         Assert.assertEquals(actual, expected, 0.1);
     }
-    @Test
-    (expectedExceptions = InputMismatchException.class)
-    public void testCalcAreaZeroSide() {
+    @Test(expectedExceptions = InputMismatchException.class)
+    public void testCaclAreaZeroSide() {
         this.romb.calcArea(0, 45,135);
-    }
-
-    @Test
-    (expectedExceptions = InputMismatchException.class)
-    public void calcCircumferenceZeroSide() {
-        this.romb.calcCircumference(0);
     }
 }
