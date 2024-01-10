@@ -27,4 +27,5 @@ public class RombTest {
     public void testCaclAreaZeroSide() {
         this.romb.calcArea(0, 45,135);
     }
+    
 }
