@@ -1,3 +1,4 @@
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -13,5 +14,7 @@ public class RombTest {
     public void testCalc() {
         double actual = this.romb.calcArea(15.0,45.0,135.0);
         double expected = 159.1;
+        Assert.assertEquals(actual, expected, 0.1, 
+        "Hiba! Nem 159.1 lett a 15, 45 bemenete");
     }
 }
