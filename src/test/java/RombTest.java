@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -14,12 +15,23 @@ public class RombTest {
     public void testCalcArea() {
         double actual = this.romb.calcArea(15.0,45.0,135.0);
         double expected = 159.1;
-        Assert.assertEquals(actual, expected, 0.1, 
-        "Hiba! Nem 159.1 lett a 15, 45 bemenete");
+        Assert.assertEquals(actual, expected, 0.1);
     }
     @Test
     public void testCalcCircumference() {
         double actual = this.romb.calcCircumference(15);
         double expected = 60;
+        Assert.assertEquals(actual, expected, 0.1);
+    }
+    @Test
+    (expectedExceptions = InputMismatchException.class)
+    public void testCalcAreaZeroSide() {
+        this.romb.calcArea(0, 45,135);
+    }
+
+    @Test
+    (expectedExceptions = InputMismatchException.class)
+    public void calcCircumferenceZeroSide() {
+        this.romb.calcCircumference(0);
     }
 }

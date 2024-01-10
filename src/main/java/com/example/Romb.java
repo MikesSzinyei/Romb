@@ -6,7 +6,7 @@ public class Romb {
     }
 
     public double calcCircumference(double side) {
-        return 0;
+        return side*4;
     }
 
 }
