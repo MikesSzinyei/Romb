@@ -23,7 +23,7 @@ public class RombTest {
         double expected = 60;
         Assert.assertEquals(actual, expected, 0.1);
     }
-    @Test(expectedExceptions = InputMismatchException.class)
+    @Test(expectedExceptions = InputMismatchException.class, expectedExceptionsMessageRegExp = "Hiba!")
     public void testCaclAreaZeroSide() {
         this.romb.calcArea(0, 45);
     }
