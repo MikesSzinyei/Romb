@@ -11,6 +11,9 @@ public class Romb {
     }
 
     public double calcCircumference(double side) {
+        if(side  <= 0) {
+            throw new InputMismatchException("Hiba!");
+        }
         return side*4;
     }
 
